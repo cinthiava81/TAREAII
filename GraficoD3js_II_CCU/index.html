@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea: Gráfico con D3 (II)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+  <!-- encabezado -->
+    <img src="/img/5.PNG" class="imagentitulo"/>
+      <p>
+  <!-- /encabezado -->
+
+<div class="container">
+  <div class="card mt-4" shadow rounded-3>
+  <!-- Bloque 1 -->
+      <div class="card mt-4 shadow rounded-3 tarjeta">
+          <img src="https://boredhumans.b-cdn.net/art/1301.jpg" class="card-img1"/>
+          <div class="card-body">
+            <h1 class="titulo-tarjeta">¿Arte o Negocio?</h1>
+            <p>
+              Ante la eterna pregunta: ¿arte o negocio?, Deborah McLeod,
+              directora de la Gagosian Gallery, que ha participado por primera
+              vez en Zona Maco, considera que Latinoamérica, con México en cabeza,
+              es un mercado en expansión en el que hay que estar sí o sí. 
+              “Tenemos un maravilloso núcleo de clientes en Latinoamérica. 
+              Vemos que la escena del arte está creciendo en la Ciudad de México, 
+              y por eso decidimos participar”. El arte sigue siendo —cada vez más— 
+              un terreno fértil para invertir. Eso sí, hay que seguir el consejo 
+              de los expertos: dejarse asesorar.
+            </p>
+          </div>
+          <div class="card-footer">
+            19 de julio de 2021
+            <button class="btn btn-sm btn-outline-secondary" onclick="location.href='http://datavizprojects.webstarts.com'">Continuar lectura</button>
+          </div>
+        </div>
+  <!-- /Bloque 1 -->
+  
+  <!-- Bloque 2 Tabla y Gráfico -->
+    <!-- Tabla Top-5 -->
+      <p></p><p></p>
+        <h2 class="titulo-tarjeta">Las pinturas más caras del mundo <span class="subtitulo">   Top 5</span></h2>
+        <table class="table table table-hover">
+          <thead>
+            <tr class="head">
+              <th scope="col">#</th>
+              <th scope="col">Pintura</th>
+              <th scope="col">Artista</th>
+              <th scope="col">Precio</th>
+              </tr>
+          </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>The Card Players</td>
+                  <td>Paul Cézanne</td>
+                  <td> $259,000,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Le Rêve</td>
+                  <td>Pablo Picasso</td>
+                  <td> $155,000,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Three Studies of Lucian Freud</td>
+                  <td>Francis Bacon</td>
+                  <td> $142,400,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>TNo. 5, 1948</td>
+                  <td>Jackson Pollock</td>
+                  <td> $140,000,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Woman III</td>
+                  <td>Willem de Kooning</td>
+                  <td> $137,500,000.00</td>
+                </tr>
+              </tbody>
+        </table>
+      </div>
+    <!-- /Tabla Top 5 -->
+       
+      <!--Control-->
+      <div class="card mt-4 shadow rounded-4" class="tarjeta">
+        <div class="container mt-4">
+          <div class="container mt-4">
+            <div class="row">
+              <div class="col-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h3>Controles</h3>
+                    Qué variable dibujo
+                    <select id="variable" class="form-control">
+                      <option value="pintura">No. de pinturas</option> 
+                      <option value="edad">Edad al morir</option>          
+                    </select>
+                    ¿Cuántas barras?
+                    <select id="numero" class="form-control">
+                      <option value="5">5</option>
+                      <option value="10">10</option>
+                      <option value="25"selected>25</option> 
+                      <option value="50">50</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-9" id="graf">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /control -->
+  
+  
+</div>
+        </div>
+
+  <!-- Pie de página -->
+  <div class="card mt-4" shadow rounded-3>
+    <nav class="px-4 shadow-lg navbar bg-light">
+    <div class="card-body">
+      <img src="https://www.unir.net/wp-content/uploads/2019/11/logo_unir.svg" />
+      <p><h3>
+      <span class="subtitulo">Herramientas de Visualización - <abbr title="Cascading Style Sheets">Tarea: Gráficos con D3 (II)</span></abbr></h3>
+      <span class="fecha-inferior">Julio de 2021</span>
+    </div>
+  <!--Fotos-->
+  <div>
+    <img src="/img/cin.PNG" class="rounded-circle foto" />
+    <img src="/img/cris.jpg" class="rounded-circle foto" />
+    <img src="/img/uriel.jpg" class="rounded-circle foto" />
+    <p><span class="nombres">   Cinthia M, Cristian M, Uriel L,</span></p>
+  </div>
+  <!--/Fotos-->
+    </nav>
+  </div>
+  <!-- /Pie de página -->
+      </div>
+    </div>
+  </div>
+</div>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js"
+referrerpolicy="no-referrer"
+></script>
+<script src="app.js"></script>
+</body>
+</html>
+</body>
+</html>

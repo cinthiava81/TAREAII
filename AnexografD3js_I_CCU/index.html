@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea 2 Gráfico con D3(I)</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+
+
+  </head>
+  <body>
+   <div class="card mt-4" shadow rounded-3>
+    <h1>¿Es cuestión de apreciación o economía?</h1>
+    <h2>El mercado del arte en las últimas 4 décadas</h2>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-3">
+          <div class="card">
+            <div class="card-body">
+              
+                <h3>Filtros</h3>
+                ¿Qué valor deseas comparar?
+                <select id="variable" class="form-control">
+                  <option value="PrecioOriginal">Precio Original</option>
+                  <option value="PrecioFinal">Precio Final</option>
+                  <option value="Puja">Monto de la Puja</option>
+                </select>
+              ¿Cuántas pinturas?
+              <select id="numero" class="form-control">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="25">15</option>
+                <option value="40">30</option>
+                <option value="50">50</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-9" id="graf">
+        </div>
+      </div>
+    </div>
+  </div>
+
+       <!-- Pie de página -->
+       <div class="card mt-4" shadow rounded-3>
+        <nav class="px-4 shadow-lg navbar bg-light">
+        <div class="card-body">
+          <img src="https://www.unir.net/wp-content/uploads/2019/11/logo_unir.svg" />
+          <p><h3>
+          <span class="subtitulo">Herramientas de Visualización - <abbr title="Cascading Style Sheets">Tarea: Gráficos con D3 (I)</span></abbr></h3>
+          <span class="fecha-inferior">Julio de 2021</span>
+        </div>
+      <!--Fotos-->
+      <div>
+        <img src="/img/cin.PNG" class="rounded-circle foto" />
+        <img src="/img/cris.jpg" class="rounded-circle foto" />
+        <img src="/img/uriel.jpg" class="rounded-circle foto" />
+        <p><span class="nombres">   Cinthia M, Cristian M, Uriel L,</span></p>
+      </div>
+      <!--/Fotos-->
+        </nav>
+      </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
